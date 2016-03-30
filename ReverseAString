@@ -1,0 +1,15 @@
+function reverseString(str) {
+  var array = str.split("");
+  var newArray = array.reverse();
+  var newString = newArray.join("");
+  return newString;
+}
+
+reverseString("hello");
+
+/*
+reverseString("hello") should return a string.
+reverseString("hello") should become "olleh".
+reverseString("Howdy") should become "ydwoH".
+reverseString("Greetings from Earth") should return "htraE morf sgniteerG".
+*/

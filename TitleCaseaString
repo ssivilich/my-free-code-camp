@@ -1,0 +1,24 @@
+function titleCase(str) {
+  var newStr = str.toLowerCase();
+  var newWord;
+  var newArr = [];
+  var newSentence;
+  
+  var array = newStr.split(" ");
+  for (var i = 0; i < array.length; i++) {
+    newWord = array[i].charAt(0).toUpperCase() + array[i].slice(1); 
+    newArr.push(newWord);
+    newSentence = newArr.join([separator = ' ']);
+   }
+  return newSentence;
+}
+
+titleCase("sHoRt AnD sToUt");
+
+/*
+titleCase("I'm a little tea pot") should return a string.
+titleCase("I'm a little tea pot") should return "I'm A Little Tea Pot".
+titleCase("sHoRt AnD sToUt") should return "Short And Stout".
+titleCase("HERE IS MY HANDLE HERE IS MY SPOUT") should return "Here Is My Handle Here Is My Spout".
+
+*/
